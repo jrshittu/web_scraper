@@ -14,8 +14,8 @@ const Home = () => {
               <Image 
                 src="/assets/icons/arrow-right.svg"
                 alt="arrow-right"
-                width={16}
-                height={16}
+                width={18}
+                height={18}
               />
             </p>
             <h1 className='head-text'>
