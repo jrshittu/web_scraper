@@ -22,7 +22,15 @@ const Home = () => {
               Unleash the power of 
                 <span className='text-primary'> Chatbots</span>
             </h1>
+
+            <p className='small-text mt-8'>
+              ChatGPT is a chatbot that can be used on any website. It can be used to answer questions, provide information, or even help you find the right product.
+            </p>
+
+            SearchBar
+
           </div>
+          HeroCarousel
         </div>
       </section>
     </>
