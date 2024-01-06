@@ -2,6 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 
 const Home = () => {
+
+  const siteType = ["Sport", "Ecommerce", "Mobile app", "Chatbot", "Other"]
+
   return (
     <>
       <section className='px-6 md:px-20 py-24'>
@@ -10,7 +13,7 @@ const Home = () => {
             <p 
               className='small-text font-spaceGrotesk'
             >
-              ChatGPT for every site
+              ChatGPT for every website
               <Image 
                 src="/assets/icons/arrow-right.svg"
                 alt="arrow-right"
@@ -31,6 +34,15 @@ const Home = () => {
 
           </div>
           HeroCarousel
+        </div>
+      </section>
+      <section className='trending-section'>
+        <h2 className='trending-text'>
+          Recently Added
+        </h2>
+
+        <div className='flex flex-wrap gap-x-8 gap-y-16'>
+          {siteType.map((site) => <div>{site}</div>)}
         </div>
       </section>
     </>
