@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import SearchBar from '@/components/SearchBar'
 
 const Home = () => {
 
@@ -30,7 +31,7 @@ const Home = () => {
               ChatGPT is a chatbot that can be used on any website. It can be used to answer questions, provide information, or even help you find the right product.
             </p>
 
-            SearchBar
+            <SearchBar />
 
           </div>
           HeroCarousel
