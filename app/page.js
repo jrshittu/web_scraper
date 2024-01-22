@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import SearchBar from '@/components/SearchBar'
+import HeroCarousel from '@/components/HeroCarousel'
 
 const Home = () => {
 
@@ -21,7 +22,7 @@ const Home = () => {
                 width={18}
                 height={18}
               />
-              
+
             </p>
             <h1 className='head-text'>
               Unleash the power of 
@@ -35,7 +36,9 @@ const Home = () => {
             <SearchBar />
 
           </div>
-          HeroCarousel
+
+          <HeroCarousel />
+          
         </div>
       </section>
       <section className='trending-section'>
