@@ -21,6 +21,7 @@ const Home = () => {
                 width={18}
                 height={18}
               />
+              
             </p>
             <h1 className='head-text'>
               Unleash the power of 
