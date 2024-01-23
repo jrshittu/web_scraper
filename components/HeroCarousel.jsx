@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -13,8 +14,15 @@ const heroImg = [
 
 const HeroCarousel = () => {
   return (
-    <div>
-      <Carousel>
+    <div className='hero-carousel'>
+      <Carousel
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop
+        interval={2000}
+        autoPlay
+        showArrows={false}
+      >
             {
                 heroImg.map((image) => 
                     <Image 
