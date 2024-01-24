@@ -2,13 +2,33 @@
 import React from 'react'
 import { useState } from 'react'
 
+const isValidAmazonUrl = (url) => {
+  try {
+    const parsedURL = new URL(url);
+    const hostname = parsedURL.hostname;
+    
+    if (hostname.includes('amazon') ||
+        hostname.includes('amazon.com') ||
+        hostname.includes('amazon.')
+    ) {
+      return true;
+    }
+
+  } catch (error) {
+    return false;
+  }
+
+  return false;
+}
+
 const SearchBar = () => {
 
     const [searchPrompt, setSearchPrompt] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(searchPrompt)
+        const isValidUrl = isValidAmazonUrl(searchPrompt);
+        alert(isValidUrl ? "Valid URL" : "Invalid URL");
       }
 
   return (
